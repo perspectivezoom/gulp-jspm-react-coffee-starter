@@ -5,6 +5,32 @@ A hand-rolled pipeline for front end projects using gulp, jspm, and coffeescript
 
 ## Usage
 
+### Clone and Enter the Repo
+```
+git clone git@github.com:perspectivezoom/gulp-jspm-starter.git
+cd gulp-jspm-starter
+```
+
+### Install Dependencies
+```
+npm install
+jspm install
+```
+
+### Build and Start the Dev Server
+```
+gulp serve
+```
+Builds from `src` into `dev` and starts BrowserSync.
+Note: This project uses gulp 4. If you don't have that globally installed, or [have aliased the gulp command](https://github.com/greypants/gulp-starter/blob/master/README.md#the-gulp-command) to the local repo, you will need to use `./node_modules/.bin/gulp serve` instead.
+
+### Generate a Production Build
+```
+gulp clean
+gulp dev
+gulp prod
+```
+Builds from `dev` into `prod`, minifying css, js, and images.
 
 ## Acknowledgements
 
