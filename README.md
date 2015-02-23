@@ -22,7 +22,7 @@ jspm install
 gulp serve
 ```
 Builds from `src` into `dev` and starts BrowserSync.
-Note: This project uses gulp 4. If you don't have that globally installed, or [have aliased the gulp command](https://github.com/greypants/gulp-starter/blob/master/README.md#the-gulp-command) to the local repo, you will need to use `./node_modules/.bin/gulp serve` instead.
+Note: This project uses gulp 4. If you don't have gulp 4 globally installed, or [have not aliased the gulp command](https://github.com/greypants/gulp-starter/blob/master/README.md#the-gulp-command) to the local repo, you will need to use `./node_modules/.bin/gulp serve` instead.
 
 ### Generate a Production Build
 ```
