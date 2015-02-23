@@ -4,5 +4,5 @@ config     = require('../config').copyDev
 
 gulp.task 'copyDev', ->
   gulp.src(config.dirs)
-  .pipe(gulp.dest(config.dest))
-  .pipe(reload(stream: true))
+    .pipe gulp.dest(config.dest)
+    .pipe reload(stream: true)

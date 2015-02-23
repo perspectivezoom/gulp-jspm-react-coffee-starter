@@ -7,8 +7,8 @@ config     = require('../config').coffee
 
 gulp.task 'coffee', ->
   gulp.src(config.src)
-  .pipe(sourcemaps.init())
-  .pipe(coffee(config.options).on('error', gutil.log))
-  .pipe(sourcemaps.write())
-  .pipe(gulp.dest(config.dest))
-  .pipe(reload(stream: true))
+    .pipe sourcemaps.init()
+    .pipe coffee(config.options).on('error', gutil.log)
+    .pipe sourcemaps.write()
+    .pipe gulp.dest(config.dest)
+    .pipe reload(stream: true)

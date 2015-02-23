@@ -8,9 +8,9 @@ config       = require('../config').sass
 
 gulp.task 'sass', ->
   gulp.src(config.src)
-  .pipe(sourcemaps.init())
-  .pipe(sass(config.options).on('error', gutil.log))
-  .pipe(autoprefixer(config.autoprefixerOptions))
-  .pipe(sourcemaps.write())
-  .pipe(gulp.dest(config.dest))
-  .pipe(reload(stream: true))
+    .pipe sourcemaps.init()
+    .pipe sass(config.options).on('error', gutil.log)
+    .pipe autoprefixer(config.autoprefixerOptions)
+    .pipe sourcemaps.write()
+    .pipe gulp.dest(config.dest)
+    .pipe reload(stream: true)
