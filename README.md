@@ -1,5 +1,5 @@
-gulp-jspm-starter
-=================
+gulp-jspm-react-coffee-starter
+==============================
 
 A hand-rolled pipeline for front end projects using gulp, jspm, and coffeescript.
 
@@ -7,7 +7,7 @@ A hand-rolled pipeline for front end projects using gulp, jspm, and coffeescript
 
 ### Clone and Enter the Repo
 ```
-git clone git@github.com:perspectivezoom/gulp-jspm-starter.git
+git clone git@github.com:perspectivezoom/gulp-jspm-react-coffee-starter.git
 cd gulp-jspm-starter
 ```
 
