@@ -6,20 +6,17 @@ module.exports =
   browserSync:
     open: false
     server:
-      baseDir: dev
-  clean:
-    dirs: [dev, prod]
-  coffee:
-    src: "#{src}/scripts/**/*.coffee"
+      baseDir: [dev, '.']
+  cjsx:
+    src: "#{src}/scripts/**/*.{coffee,cjsx}"
     dest: "#{dev}/scripts"
     options:
       bare: true
+  clean:
+    dirs: [dev, prod]
   copyDev:
     dirs: ["#{src}/**", "!#{src}/{scripts,styles}{,/**}"]
     dest: dev
-  copyJspmDev:
-    src: ["jspm_packages{,/**}", "config.js"]
-    dest: "#{dev}/scripts"
   copyProd:
     dirs: ["#{dev}/**", "!#{dev}/{scripts,styles,images}{,/**}", "!#{dev}/index.html"]
     dest: prod

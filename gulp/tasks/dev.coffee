@@ -1,7 +1,6 @@
 gulp  = require 'gulp'
-require './coffee'
+require './cjsx'
 require './sass'
 require './copyDev'
-require './copyJspmDev'
 
-gulp.task 'dev', gulp.parallel('coffee', 'copyJspmDev', 'sass', 'copyDev')
+gulp.task 'dev', gulp.parallel('cjsx', 'sass', 'copyDev')

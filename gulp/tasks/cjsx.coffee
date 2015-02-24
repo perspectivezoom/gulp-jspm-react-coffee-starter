@@ -1,14 +1,14 @@
 gulp       = require 'gulp'
 gutil      = require 'gulp-util'
-coffee     = require 'gulp-coffee'
+cjsx       = require 'gulp-cjsx'
 sourcemaps = require 'gulp-sourcemaps'
 reload     = require('browser-sync').reload
-config     = require('../config').coffee
+config     = require('../config').cjsx
 
-gulp.task 'coffee', ->
+gulp.task 'cjsx', ->
   gulp.src(config.src)
     .pipe sourcemaps.init()
-    .pipe coffee(config.options).on('error', gutil.log)
+    .pipe cjsx(config.options).on('error', gutil.log)
     .pipe sourcemaps.write()
     .pipe gulp.dest(config.dest)
     .pipe reload(stream: true)
